@@ -199,18 +199,21 @@ setTimeout(() => {
    questionContainer.style.borderRadius = "300px";
 }, 2000);
 
-let interval = setInterval(() => {
-   document.body.innerHTML += 
-   `
-      <div class='box'>
-         <h2> Nouvelle boite !</h2>
-      </div>
-   `;
-}, 1000);
-document.body.addEventListener("click", (e) => {
-   e.target.remove();
-   clearInterval(interval);
-});
+// let interval = setInterval(() => {
+//    document.body.innerHTML += 
+//    `
+//       <div class='box'>
+//          <h2> Nouvelle boite !</h2>
+//       </div>
+//    `;
+// }, 1000);
+// document.body.addEventListener("click", (e) => {
+//    e.target.remove();
+//    clearInterval(interval);
+// });
+
+
+
  //location
 //  console.log(location.href);
 //  console.log(location.host);
@@ -233,7 +236,9 @@ document.body.addEventListener("click", (e) => {
 // window.history.back();
 // history.go(-2);
 //---------------------------------------------------------------
-window.addEventListener("mousemove", (e) => {
-   nav.style.setProperty("---x", e.layerX + "px");
-   nav.style.setProperty("---y", e.layery + "px");
+
+
+ window.addEventListener("mousemove", (e) => {
+    nav.style.setProperty("---x", e.layerX + "px");
+    nav.style.setProperty("---y", e.layery + "px");
 });
